@@ -28,6 +28,7 @@ body {
   margin: 0;
   background: var(--color-bg);
   font-family: var(--font);
+  line-height: 1.5;
 }
 
 .bg {
