@@ -35,7 +35,7 @@ import Avatar from '@/components/Avatar.vue';
 import IconBrandFull from '@/components/icons/IconBrandFull.vue';
 import IconChevronDown from '@/components/icons/IconChevronDown.vue';
 
-const avatarSrc = '/assets/users/destiner.jpeg';
+const avatarSrc = '/assets/users/thomas.jpeg';
 
 const routes = [{
   name: 'Store',
