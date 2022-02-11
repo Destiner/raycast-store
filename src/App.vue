@@ -13,8 +13,8 @@ import NavBar from '@/components/NavBar.vue';
 <style>
 :root {
   --color-text: #fff;
-  --color-text-primary: #fff9;
-  --color-text-secondary: #fffc;
+  --color-text-primary: #fffc;
+  --color-text-secondary: #fff9;
   --color-text-label: #fff3;
   --color-bg: #05010d;
   --color-bg-card: #ffffff0c;
