@@ -252,7 +252,7 @@ const extension = {
 .card {
   display: flex;
   flex-direction: column;
-  width: 900px;
+  width: 1000px;
   padding: 48px 40px;
   gap: 48px;
   border: 1px solid var(--color-border);
@@ -313,7 +313,7 @@ const extension = {
 
 .command,
 .preference {
-  width: 262px;
+  width: 295px;
   font-size: 13px;
 }
 
