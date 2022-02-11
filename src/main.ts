@@ -1,3 +1,5 @@
+import '@fontsource/jetbrains-mono';
+import '@fontsource/inter';
 import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
 
