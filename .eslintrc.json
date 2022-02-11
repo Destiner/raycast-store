@@ -23,7 +23,7 @@
   },
   "plugins": ["import", "vue"],
   "rules": {
-    "indent": ["error", "tab"],
+    "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
@@ -44,7 +44,7 @@
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "vue/no-v-html": "off",
-    "vue/html-indent": ["error", "tab"],
+    "vue/html-indent": ["error", 2],
     "vue/component-tags-order": [
       "error",
       {
