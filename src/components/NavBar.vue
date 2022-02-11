@@ -96,7 +96,7 @@ const routes = [{
 }
 
 .route > a {
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   text-decoration: none;
 }
 
