@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="bg" />
     <div>
       <router-link :to="'/'">
         Home
@@ -14,12 +15,26 @@
 
 <style>
 :root {
+  --color-bg: #05010d;
   --font: 'Inter', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-monospace: 'JetBrains Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
 }
 
 body {
+  margin: 0;
+  background: var(--color-bg);
   font-family: var(--font);
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1250px;
+  height: 633px;
+  margin-left: 55px;
+  transform: matrix(1, 0, 0, 1, -625, 0);
+  background: url('/assets/bg.png');
 }
 
 /* Reset */
