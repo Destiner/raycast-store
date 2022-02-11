@@ -1,15 +1,12 @@
 <template>
   <div>
     <h1>Main page</h1>
-    <Banner />
     <div>Latest block on Ethereum: {{ block }}</div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
-
-import Banner from '@/components/BannerBase.vue';
 
 const block = ref('0');
 
