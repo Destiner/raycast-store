@@ -6,6 +6,6 @@
   ],
   "rules": {
     "string-quotes": "single",
-    "indentation": "tab"
+    "indentation": 2
   }
 }
