@@ -20,7 +20,7 @@ import NavBar from '@/components/NavBar.vue';
   --color-bg-card: #ffffff0c;
   --color-bg-button: #ffffff3f;
   --color-border: #ffffff19;
-  --font: 'Inter', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  --font: 'InterVariable', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-monospace: 'JetBrains Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
 }
 

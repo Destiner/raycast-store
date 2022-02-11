@@ -1,5 +1,5 @@
 import '@fontsource/jetbrains-mono';
-import '@fontsource/inter';
+import '@fontsource/inter/variable.css';
 import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
 
