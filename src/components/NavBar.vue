@@ -120,7 +120,6 @@ const routes = [{
   gap: 9px;
   align-items: center;
   margin: 0 32px;
-  padding-right: 56px;
 }
 
 .avatar {
