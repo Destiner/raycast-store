@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   run:
@@ -12,17 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Clean install
-      run: npm ci
+      - name: Clean install
+        run: npm ci
 
-    - name: Lint
-      run: npm run lint
+      - name: Lint
+        run: npm run lint
 
-    - name: Type checking
-      run: npx tsc --noEmit && npx vue-tsc --noEmit
+      - name: Type checking
+        run: npx tsc --noEmit && npx vue-tsc --noEmit
 
-    - name: Build
-      run: npm run build
+      - name: Build
+        run: npm run build
