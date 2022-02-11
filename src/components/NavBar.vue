@@ -85,6 +85,7 @@ const routes = [{
 .routes {
   display: flex;
   gap: 32px;
+  letter-spacing: 0.025em;
 }
 
 .route {
