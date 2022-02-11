@@ -85,12 +85,13 @@ const routes = [{
 .routes {
   display: flex;
   gap: 32px;
+  align-items: center;
+  font-weight: 500;
   letter-spacing: 0.025em;
 }
 
 .route {
   font-size: 12.8px;
-  font-weight: 500;
   list-style: none;
 }
 
@@ -119,7 +120,7 @@ const routes = [{
   gap: 9px;
   align-items: center;
   margin: 0 32px;
-  padding-right: 42px;
+  padding-right: 56px;
 }
 
 .avatar {
