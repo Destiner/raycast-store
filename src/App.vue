@@ -15,7 +15,14 @@
 
 <style>
 :root {
+  --color-text: #fff;
+  --color-text-primary: #fff9;
+  --color-text-secondary: #fffc;
+  --color-text-label: #fff3;
   --color-bg: #05010d;
+  --color-bg-card: #ffffff0c;
+  --color-bg-button: #ffffff3f;
+  --color-border: #ffffff19;
   --font: 'Inter', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-monospace: 'JetBrains Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
 }
