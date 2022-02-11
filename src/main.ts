@@ -2,15 +2,16 @@ import { createApp } from 'vue';
 import { createWebHistory, createRouter } from 'vue-router';
 
 import App from './App.vue';
-import About from './pages/About.vue';
-import Main from './pages/Main.vue';
+import Extension from './pages/Extension.vue';
+import Home from './pages/Home.vue';
 
 const routerHistory = createWebHistory();
 const router = createRouter({
   history: routerHistory,
   routes: [
-    { path: '/', component: Main },
-    { path: '/about', component: About },
+    { path: '', redirect: '/store' },
+    { path: '/store', component: Home },
+    { path: '/:user/:extension', component: Extension },
   ],
 });
 
