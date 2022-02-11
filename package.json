@@ -16,6 +16,8 @@
     "lint:stylelint": "stylelint \"src/**/*.{css,vue}\""
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.4",
+    "@fontsource/jetbrains-mono": "^4.5.3",
     "vue": "^3.2.26",
     "vue-router": "^4.0.12"
   },
