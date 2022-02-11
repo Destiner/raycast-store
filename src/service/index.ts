@@ -32,11 +32,11 @@ interface Extension {
 }
 
 class Service {
-  async listExtensions() {
+  static async listExtensions() {
     return [];
   }
 
-  async getExtension(author: string, id: string): Promise<Extension> {
+  static async getExtension(author: string, id: string): Promise<Extension> {
     return extension;
   }
 }
