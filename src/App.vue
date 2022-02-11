@@ -18,7 +18,8 @@ import NavBar from '@/components/NavBar.vue';
   --color-text-label: #fff3;
   --color-bg: #05010d;
   --color-bg-card: #ffffff0c;
-  --color-bg-button: #ffffff3f;
+  --color-bg-button: #fff3;
+  --color-bg-button-hover: #ffffff3f;
   --color-border: #ffffff19;
   --font: 'InterVariable', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
   --font-monospace: 'JetBrains Mono', 'Lucida Console', 'Courier New', 'Courier', monospace;
@@ -27,6 +28,7 @@ import NavBar from '@/components/NavBar.vue';
 body {
   margin: 0;
   background: var(--color-bg);
+  color: var(--color-text-primary);
   font-family: var(--font);
   line-height: 1.5;
 }
