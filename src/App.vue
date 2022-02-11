@@ -1,17 +1,14 @@
 <template>
   <div id="app">
     <div class="bg" />
-    <div>
-      <router-link :to="'/'">
-        Home
-      </router-link>
-      <router-link :to="'/about'">
-        About
-      </router-link>
-    </div>
+    <NavBar />
     <router-view />
   </div>
 </template>
+
+<script setup lang="ts">
+import NavBar from '@/components/NavBar.vue';
+</script>
 
 <style>
 :root {
@@ -42,6 +39,7 @@ body {
   margin-left: 55px;
   transform: matrix(1, 0, 0, 1, -625, 0);
   background: url('/assets/bg.png');
+  pointer-events: none;
 }
 
 /* Reset */
