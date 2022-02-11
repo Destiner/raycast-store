@@ -292,7 +292,7 @@ const extension = {
   display: flex;
   flex-direction: column;
   font-size: 12px;
-  gap: 16px;
+  gap: 8px;
 }
 
 .block-label {
