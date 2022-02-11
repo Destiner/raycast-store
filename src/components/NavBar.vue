@@ -64,7 +64,7 @@ const routes = [{
 }];
 </script>
 
-<style>
+<style scoped>
 .bar {
   display: flex;
   align-items: center;
