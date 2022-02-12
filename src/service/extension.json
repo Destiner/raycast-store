@@ -1,74 +1,132 @@
 {
-	"id": "spotify-controls",
-	"title": "Spotify Controls",
-	"description": "Control the Spotify app for macOS with your keyboard.",
-	"icon": "/assets/icons/spotify-controls/icon.png",
-	"category": {
-		"title": "Apps",
-		"id": "apps"
-	},
-	"commands": [
-		{
-			"title": "Play",
-			"description": "Plays current track in Spotify."
-		},
-		{
-			"title": "Pause",
-			"description": "Pause current track in Spotify."
-		},
-		{
-			"title": "Toggle Play/Pause",
-			"description": "Toggles play or pause of current track in Spotify."
-		},
-		{
-			"title": "Previous Track",
-			"description": "Skips to the previous track in Spotify."
-		},
-		{
-			"title": "Next Track",
-			"description": "Skips to the next track in Spotify."
-		},
-		{
-			"title": "Current Track",
-			"description": "Currently playing track in Spotify."
-		},
-		{
-			"title": "Copy Current Track URL",
-			"description": "Currently playing song's URL in Spotify."
-		},
-		{
-			"title": "Toggle Shuffle",
-			"description": "Toggles shuffle mode in Spotify."
-		},
-		{
-			"title": "Shuffle Play",
-			"description": "Plays current track with shuffle enabled."
-		},
-		{
-			"title": "Toggle Repeat",
-			"description": "Toggles repeat mode in Spotify."
-		}
-	],
-	"preferences": [],
-	"author": {
-		"name": "thomas",
-		"avatar": "/assets/users/thomas.jpeg",
-		"github": "thomaspaulmann"
-	},
-	"contributors": [
-		{
-			"name": "ron-myers",
-			"avatar": "/assets/users/ron-myers.jpeg"
-		},
-		{
-			"name": "altrdev",
-			"avatar": "/assets/users/altrdev.jpeg"
-		}
-	],
-	"installs": 3988,
-	"source": "https://github.com/raycast/extensions/tree/9750b478df29f2630a0186d64dfacfd57ff7b7ea/extensions/spotify-controls/",
-	"media": [{
-    "path": "/assets/media/spotify-controls/1.png",
-    "type": "image"
-  }]
+  "rishabswift": {
+    "word-search": {
+      "id": "word-search",
+      "title": "Word Search",
+      "description": "Search for synonyms, antonyms and rhymes",
+      "icon": "/assets/icons/word-search/icon.png",
+      "category": {
+        "title": "Utilities",
+        "id": "utilities"
+      },
+      "commands": [
+        {
+          "title": "Search Word Synonym",
+          "description": "Search for synonyms given a word"
+        },
+        {
+          "title": "Search Word Antonym",
+          "description": "Search for antonyms given a word"
+        },
+        {
+          "title": "Search Word Rhyme",
+          "description": "Search for rhymes given a word"
+        }
+      ],
+      "preferences": [],
+      "author": {
+        "name": "rishabswift",
+        "avatar": "/assets/users/rishabswift.jpeg",
+        "github": "RishabSwift"
+      },
+      "contributors": [{
+        "name": "thomas",
+        "avatar": "/assets/users/thomas.jpeg"
+      }],
+      "installs": 249,
+      "source": "https://github.com/raycast/extensions/blob/97515c7baf0db8637b2470c5af85e0f8c8a8a426/extensions/word-search/",
+      "media": [
+        {
+          "path": "/assets/media/word-search/1.mp4",
+          "type": "video"
+        },
+        {
+          "path": "/assets/media/word-search/2.png",
+          "type": "image"
+        },
+        {
+          "path": "/assets/media/word-search/3.png",
+          "type": "image"
+        }
+      ]
+    }
+  },
+  "thomas": {
+    "spotify-controls": {
+      "id": "spotify-controls",
+      "title": "Spotify Controls",
+      "description": "Control the Spotify app for macOS with your keyboard.",
+      "icon": "/assets/icons/spotify-controls/icon.png",
+      "category": {
+        "title": "Apps",
+        "id": "apps"
+      },
+      "commands": [
+        {
+          "title": "Play",
+          "description": "Plays current track in Spotify."
+        },
+        {
+          "title": "Pause",
+          "description": "Pause current track in Spotify."
+        },
+        {
+          "title": "Toggle Play/Pause",
+          "description": "Toggles play or pause of current track in Spotify."
+        },
+        {
+          "title": "Previous Track",
+          "description": "Skips to the previous track in Spotify."
+        },
+        {
+          "title": "Next Track",
+          "description": "Skips to the next track in Spotify."
+        },
+        {
+          "title": "Current Track",
+          "description": "Currently playing track in Spotify."
+        },
+        {
+          "title": "Copy Current Track URL",
+          "description": "Currently playing song's URL in Spotify."
+        },
+        {
+          "title": "Toggle Shuffle",
+          "description": "Toggles shuffle mode in Spotify."
+        },
+        {
+          "title": "Shuffle Play",
+          "description": "Plays current track with shuffle enabled."
+        },
+        {
+          "title": "Toggle Repeat",
+          "description": "Toggles repeat mode in Spotify."
+        }
+      ],
+      "preferences": [],
+      "author": {
+        "name": "thomas",
+        "avatar": "/assets/users/thomas.jpeg",
+        "github": "thomaspaulmann"
+      },
+      "contributors": [
+        {
+          "name": "ron-myers",
+          "avatar": "/assets/users/ron-myers.jpeg"
+        },
+        {
+          "name": "altrdev",
+          "avatar": "/assets/users/altrdev.jpeg"
+        }
+      ],
+      "installs": 3988,
+      "source": "https://github.com/raycast/extensions/tree/9750b478df29f2630a0186d64dfacfd57ff7b7ea/extensions/spotify-controls/",
+      "media": [
+        {
+          "path": "/assets/media/spotify-controls/1.png",
+          "type": "image"
+        }
+      ]
+    }
+  }
 }

@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block media-list">
         <div
           v-for="(media, index) in extension.media"
           :key="index"
@@ -88,10 +88,11 @@
             v-if="media.type === 'image'"
             :src="media.path"
           >
-          <img
+          <video
             v-if="media.type === 'video'"
+            controls
             :src="media.path"
-          >
+          />
         </div>
       </div>
       <div class="misc">
@@ -319,7 +320,12 @@ function getRequestFeatureUrl(title: string, source: string, author: string) {
   white-space: nowrap;
 }
 
+.media-list {
+  display: flex;
+}
+
 .media {
+  display: inline-block;
   height: 250px;
 }
 

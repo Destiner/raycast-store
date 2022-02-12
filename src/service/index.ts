@@ -41,7 +41,7 @@ class Service {
   }
 
   static async getExtension(author: string, id: string): Promise<Extension> {
-    return extension;
+    return extension[author][id];
   }
 }
 
