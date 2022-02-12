@@ -3,6 +3,7 @@
     <div class="bg" />
     <NavBar />
     <router-view />
+    <footer />
   </div>
 </template>
 
@@ -43,6 +44,10 @@ body {
   transform: matrix(1, 0, 0, 1, -625, 0);
   background: url('/assets/bg.png');
   pointer-events: none;
+}
+
+footer {
+  height: 32px;
 }
 
 /* Reset */
