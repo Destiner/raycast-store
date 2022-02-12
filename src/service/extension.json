@@ -66,5 +66,8 @@
 	],
 	"installs": 3988,
 	"source": "https://github.com/raycast/extensions/tree/9750b478df29f2630a0186d64dfacfd57ff7b7ea/extensions/spotify-controls/",
-	"media": ["assets/media/spotify-controls/1.png"]
+	"media": [{
+    "path": "/assets/media/spotify-controls/1.png",
+    "type": "image"
+  }]
 }
