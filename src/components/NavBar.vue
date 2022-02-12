@@ -82,6 +82,12 @@ const routes = [{
   display: flex;
 }
 
+@media (max-width: 768px) {
+  .items {
+    display: none;
+  }
+}
+
 .routes {
   display: flex;
   gap: 32px;
