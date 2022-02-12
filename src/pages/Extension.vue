@@ -10,12 +10,15 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
+import { useRoute } from 'vue-router';
 
 import CardExtension from '@/components/CardExtension.vue';
 import Service, { Extension } from '@/service';
 
-const author = 'thomas';
-const id = 'spotify-controls';
+const route = useRoute();
+
+const author = route.params.user as string;
+const id = route.params.extension as string;
 const extension = ref<Extension | null>(null);
 
 onMounted(() => {
