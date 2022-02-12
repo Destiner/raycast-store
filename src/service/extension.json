@@ -2,7 +2,7 @@
 	"id": "spotify-controls",
 	"title": "Spotify Controls",
 	"description": "Control the Spotify app for macOS with your keyboard.",
-	"icon": "assets/icons/spotify-controls/icon.png",
+	"icon": "/assets/icons/spotify-controls/icon.png",
 	"category": {
 		"title": "Apps",
 		"id": "apps"
@@ -52,16 +52,16 @@
 	"preferences": [],
 	"author": {
 		"name": "thomas",
-		"avatar": "assets/users/thomas.jpeg"
+		"avatar": "/assets/users/thomas.jpeg"
 	},
 	"contributors": [
 		{
 			"name": "ron-myers",
-			"avatar": "assets/users/ron-myers.jpeg"
+			"avatar": "/assets/users/ron-myers.jpeg"
 		},
 		{
 			"name": "altrdev",
-			"avatar": "assets/users/altrdev.jpeg"
+			"avatar": "/assets/users/altrdev.jpeg"
 		}
 	],
 	"installs": 3988,
