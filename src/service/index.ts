@@ -21,6 +21,7 @@ interface Extension {
   author: {
     name: string;
     avatar: string;
+    github: string;
   };
   contributors: {
     name: string;

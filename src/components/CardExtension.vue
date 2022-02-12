@@ -10,9 +10,9 @@
           <div class="title">
             {{ extension.title }}
           </div>
-          <div>
+          <RouterLink class="description" :to="{ name: 'store', query: { 'category': extension.category.id } }">
             {{ extension.category.title }}
-          </div>
+          </RouterLink>
         </div>
       </div>
       <ButtonInstall
@@ -99,14 +99,19 @@
           <div class="block-label">
             Author
           </div>
-          <div class="block-value author">
-            <Avatar
-              class="avatar"
-              :src="extension.author.avatar"
-            />
-            <div>
-              {{ extension.author.name }}
-            </div>
+          <div class="block-value">
+            <RouterLink
+              class="author"
+              :to="{ name: 'user', params: { user: extension.author.name }}"
+            >
+              <Avatar
+                class="avatar"
+                :src="extension.author.avatar"
+              />
+              <div class="author-name">
+                {{ extension.author.name }}
+              </div>
+            </RouterLink>
           </div>
         </div>
 
@@ -115,12 +120,16 @@
             Contributors
           </div>
           <div class="block-value contributors">
-            <Avatar
+            <RouterLink
               v-for="contributor in extension.contributors"
               :key="contributor.name"
-              class="avatar"
-              :src="contributor.avatar"
-            />
+              :to="{ name: 'user', params: { user: contributor.name }}"
+            >
+              <Avatar
+                class="avatar"
+                :src="contributor.avatar"
+              />
+            </RouterLink>
           </div>
         </div>
 
@@ -149,12 +158,12 @@
       </div>
       <div class="links">
         <LinkExternal
-          :url="''"
+          :url="getReportBugUrl(extension.title, extension.source, extension.author.github)"
           :label="'Report a Bug'"
           class="link"
         />
         <LinkExternal
-          :url="''"
+          :url="getRequestFeatureUrl(extension.title, extension.source, extension.author.github)"
           :label="'Request a Feature'"
           class="link"
         />
@@ -165,6 +174,7 @@
 
 <script setup lang="ts">
 import { PropType } from 'vue';
+import { RouterLink } from 'vue-router';
 
 import Avatar from '@/components/Avatar.vue';
 import ButtonInstall from '@/components/ButtonInstall.vue';
@@ -178,6 +188,14 @@ defineProps({
     required: true,
   },
 });
+
+function getReportBugUrl(title: string, source: string, author: string) {
+  return `https://github.com/raycast/extensions/issues/new?labels=extension,bug&body=%23%20Extension%20–%20%5B${title}%5D(${source})%0AAuthor:%20@${author}%0A%0A%3C!--%0APlease%20provide%20a%20clear%20and%20concise%20description%20of%20what%20the%20bug%20is.%20Include%0Ascreenshots%20if%20needed.%20Please%20test%20using%20the%20latest%20version%20of%20the%20extension,%20Raycast%20and%20API.%0A--%3E%0A%23%23%20Description%0A%0A%23%23%20Steps%20To%20Reproduce%0A%0A1.%0A2.%0A%0A%3C!--%0AYour%20bug%20will%20get%20fixed%20much%20faster%20if%20the%20extension%20author%20can%20easily%20reproduce%20it.%20Issues%20without%20reproduction%20steps%20may%20be%20immediately%20closed%20as%20not%20actionable.%0A--%3E%0A%0A%23%23%20The%20current%20behavior%0A%0A%0A%23%23%20The%20expected%20behavior%0A%0A`;
+}
+
+function getRequestFeatureUrl(title: string, source: string, author: string) {
+  return `https://github.com/raycast/extensions/issues/new?labels=extension,feature+request&body=%23%20Extension%20–%20%5B${title}%5D(${source})%0AAuthor:%20@${author}%0A%0A%3C!--%0A%20%20Please%20provide%20a%20clear%20and%20concise%20description%20for%20your%20idea.%0A--%3E%0A%0A**Describe%20the%20feature%20and%20the%20current%20behavior/state.**%0A%0A**Who%20will%20benefit%20with%20this%20feature?**%0A%0A**Any%20Other%20info.**%0A`;
+}
 </script>
 
 <style scoped>
@@ -221,6 +239,11 @@ defineProps({
   color: var(--color-text);
   font-size: 20px;
   font-weight: 600;
+}
+
+.description {
+  color: var(--color-text-primary);
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -320,6 +343,8 @@ defineProps({
 .author {
   display: flex;
   gap: 8px;
+  color: var(--color-text-secondary);
+  text-decoration: none;
 }
 
 .contributors {

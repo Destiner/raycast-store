@@ -52,7 +52,8 @@
 	"preferences": [],
 	"author": {
 		"name": "thomas",
-		"avatar": "/assets/users/thomas.jpeg"
+		"avatar": "/assets/users/thomas.jpeg",
+		"github": "thomaspaulmann"
 	},
 	"contributors": [
 		{
