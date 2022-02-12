@@ -10,13 +10,13 @@
       <ul class="routes">
         <li
           v-for="route in routes"
-          :key="route.path"
+          :key="route.name"
           class="route"
-          :class="{ active: route.active }"
+          :class="{ active: route.name === activeRoute }"
         >
-          <a :href="route.path">
-            {{ route.name }}
-          </a>
+          <RouterLink :to="{ name: route.name }">
+            {{ route.title }}
+          </RouterLink>
         </li>
       </ul>
       <div class="user">
@@ -31,6 +31,9 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+import { RouterLink, useRoute } from 'vue-router';
+
 import Avatar from '@/components/Avatar.vue';
 import IconBrandFull from '@/components/icons/IconBrandFull.vue';
 import IconChevronDown from '@/components/icons/IconChevronDown.vue';
@@ -38,30 +41,41 @@ import IconChevronDown from '@/components/icons/IconChevronDown.vue';
 const avatarSrc = '/assets/users/thomas.jpeg';
 
 const routes = [{
-  name: 'Store',
-  path: '/store',
+  title: 'Store',
+  name: 'store',
   active: true,
 }, {
-  name: 'Developer',
-  path: '/developers',
+  title: 'Developer',
+  name: 'developers',
   active: false,
 }, {
-  name: 'Pricing',
-  path: '/pricing',
+  title: 'Pricing',
+  name: 'pricing',
   active: false,
 }, {
-  name: 'Changelog',
-  path: '/changelog',
+  title: 'Changelog',
+  name: 'changelog',
   active: false,
 }, {
-  name: 'Blog',
-  path: '/blog',
+  title: 'Blog',
+  name: 'blog',
   active: false,
 }, {
-  name: 'Jobs',
-  path: '/jobs',
+  title: 'Jobs',
+  name: 'jobs',
   active: false,
 }];
+
+const activeRoute = computed(() => {
+  const route = useRoute();
+
+  const { name } = route;
+
+  if (name === 'extension' || name === 'user') {
+    return 'store';
+  }
+  return name;
+});
 </script>
 
 <style scoped>
