@@ -10,7 +10,7 @@
           <div class="title">
             {{ extension.title }}
           </div>
-          <div class="category">
+          <div>
             {{ extension.category.title }}
           </div>
         </div>
@@ -18,6 +18,7 @@
       <ButtonInstall
         :author="author"
         :extension="id"
+        class="button"
       />
     </div>
     <div class="data">
@@ -260,6 +261,15 @@ const extension = {
   background: var(--color-bg-card);
 }
 
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 16px);
+    margin-right: 8px;
+    margin-left: 8px;
+    padding: 32px 20px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -280,6 +290,12 @@ const extension = {
   color: var(--color-text);
   font-size: 20px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
 }
 
 .data {
@@ -315,6 +331,13 @@ const extension = {
 .preference {
   width: 295px;
   font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .command,
+  .preference {
+    width: calc((100% - 16px) / 2);
+  }
 }
 
 .command-header,
@@ -353,7 +376,9 @@ const extension = {
 
 .misc {
   display: flex;
-  gap: 64px;
+  flex-wrap: wrap;
+  column-gap: 64px;
+  row-gap: 16px;
 }
 
 .avatar {
