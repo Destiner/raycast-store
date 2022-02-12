@@ -139,25 +139,25 @@
           </div>
           <div class="block-value source">
             <IconGithub class="source-icon" />
-            <a
+            <LinkExternal
+              :url="extension.source"
+              :label="'raycast/extensions'"
               class="source-link"
-              :href="extension.source"
-            >
-              raycast/extensions
-              <IconExternalLink class="source-link-icon" />
-            </a>
+            />
           </div>
         </div>
       </div>
       <div class="links">
-        <a class="link">
-          Report a Bug
-          <IconExternalLink class="link-icon" />
-        </a>
-        <a class="link">
-          Request a Feature
-          <IconExternalLink class="link-icon" />
-        </a>
+        <LinkExternal
+          :url="''"
+          :label="'Report a Bug'"
+          class="link"
+        />
+        <LinkExternal
+          :url="''"
+          :label="'Request a Feature'"
+          class="link"
+        />
       </div>
     </div>
   </div>
@@ -168,7 +168,7 @@ import { PropType } from 'vue';
 
 import Avatar from '@/components/Avatar.vue';
 import ButtonInstall from '@/components/ButtonInstall.vue';
-import IconExternalLink from '@/components/icons/IconExternalLink.vue';
+import LinkExternal from '@/components/LinkExternal.vue';
 import IconGithub from '@/components/icons/IconGithub.vue';
 import { Extension } from '@/service';
 
