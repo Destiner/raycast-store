@@ -329,7 +329,7 @@ const extension = {
 
 .command,
 .preference {
-  width: 295px;
+  width: calc((100% - 2 * 16px) / 3);
   font-size: 13px;
 }
 
