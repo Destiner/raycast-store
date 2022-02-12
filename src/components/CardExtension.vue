@@ -16,8 +16,8 @@
         </div>
       </div>
       <ButtonInstall
-        :author="author"
-        :extension="id"
+        :author="extension.author.name"
+        :extension="extension.id"
         class="button"
       />
     </div>
@@ -171,9 +171,6 @@ import ButtonInstall from '@/components/ButtonInstall.vue';
 import IconExternalLink from '@/components/icons/IconExternalLink.vue';
 import IconGithub from '@/components/icons/IconGithub.vue';
 import { Extension } from '@/service';
-
-const author = 'thomas';
-const id = 'spotify-controls';
 
 defineProps({
   extension: {
