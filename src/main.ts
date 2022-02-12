@@ -18,14 +18,14 @@ const router = createRouter({
   history: routerHistory,
   routes: [
     { path: '', redirect: '/store' },
-    { path: '/store', component: Store },
-    { path: '/:user/:extension', component: Extension },
-    { path: '/developers', component: Developers },
-    { path: '/pricing', component: Pricing },
-    { path: '/changelog', component: Changelog },
-    { path: '/blog', component: Blog },
-    { path: '/jobs', component: Jobs },
-    { path: '/:user', component: User },
+    { path: '/store', name: 'store', component: Store },
+    { path: '/:user/:extension', name: 'extension', component: Extension },
+    { path: '/developers', name: 'developers', component: Developers },
+    { path: '/pricing', name: 'pricing', component: Pricing },
+    { path: '/changelog', name: 'changelog', component: Changelog },
+    { path: '/blog', name: 'blog', component: Blog },
+    { path: '/jobs', name: 'jobs', component: Jobs },
+    { path: '/:user', name: 'user', component: User },
   ],
 });
 
