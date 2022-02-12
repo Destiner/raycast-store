@@ -29,10 +29,12 @@
         "avatar": "/assets/users/rishabswift.jpeg",
         "github": "RishabSwift"
       },
-      "contributors": [{
-        "name": "thomas",
-        "avatar": "/assets/users/thomas.jpeg"
-      }],
+      "contributors": [
+        {
+          "name": "thomas",
+          "avatar": "/assets/users/thomas.jpeg"
+        }
+      ],
       "installs": 249,
       "source": "https://github.com/raycast/extensions/blob/97515c7baf0db8637b2470c5af85e0f8c8a8a426/extensions/word-search/",
       "media": [

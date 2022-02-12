@@ -10,7 +10,10 @@
           <div class="title">
             {{ extension.title }}
           </div>
-          <RouterLink class="description" :to="{ name: 'store', query: { 'category': extension.category.id } }">
+          <RouterLink
+            class="description"
+            :to="{ name: 'store', query: { 'category': extension.category.id } }"
+          >
             {{ extension.category.title }}
           </RouterLink>
         </div>
