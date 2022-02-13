@@ -325,10 +325,13 @@ function getRequestFeatureUrl(title: string, source: string, author: string) {
 
 .media-list {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .media {
-  display: inline-block;
+  flex: 0 0 auto;
   height: 250px;
 }
 
