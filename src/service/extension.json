@@ -38,22 +38,10 @@
       "installs": 249,
       "source": "https://github.com/raycast/extensions/blob/97515c7baf0db8637b2470c5af85e0f8c8a8a426/extensions/word-search/",
       "media": [
-        {
-          "path": "/assets/media/word-search/1.png",
-          "type": "image"
-        },
-        {
-          "path": "/assets/media/word-search/2.png",
-          "type": "image"
-        },
-        {
-          "path": "/assets/media/word-search/3.png",
-          "type": "image"
-        },
-        {
-          "path": "/assets/media/word-search/4.png",
-          "type": "image"
-        }
+        "/assets/media/word-search/1.png",
+        "/assets/media/word-search/2.png",
+        "/assets/media/word-search/3.png",
+        "/assets/media/word-search/4.png"
       ]
     }
   },
@@ -127,12 +115,7 @@
       ],
       "installs": 3988,
       "source": "https://github.com/raycast/extensions/tree/9750b478df29f2630a0186d64dfacfd57ff7b7ea/extensions/spotify-controls/",
-      "media": [
-        {
-          "path": "/assets/media/spotify-controls/1.png",
-          "type": "image"
-        }
-      ]
+      "media": ["/assets/media/spotify-controls/1.png"]
     }
   }
 }

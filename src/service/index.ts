@@ -29,10 +29,7 @@ interface Extension {
   }[];
   installs: number;
   source: string;
-  media: {
-    path: string;
-    type: string;
-  }[];
+  media: string[];
 }
 
 class Service {
