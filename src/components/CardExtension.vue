@@ -67,10 +67,7 @@
             class="block-value preference"
           >
             <div class="preference-header">
-              <img
-                class="preference-icon"
-                :src="extension.icon"
-              >
+              <IconPreference class="preference-icon" />
               <div class="preference-title">
                 {{ preference.title }}
               </div>
@@ -174,6 +171,7 @@ import Avatar from '@/components/Avatar.vue';
 import ButtonInstall from '@/components/ButtonInstall.vue';
 import LinkExternal from '@/components/LinkExternal.vue';
 import IconGithub from '@/components/icons/IconGithub.vue';
+import IconPreference from '@/components/icons/IconPreference.vue';
 import { Extension } from '@/service';
 
 defineProps({
