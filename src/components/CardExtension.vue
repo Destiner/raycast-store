@@ -326,6 +326,12 @@ function getRequestFeatureUrl(title: string, source: string, author: string) {
   border-radius: 8px;
 }
 
+@media (max-width: 768px) {
+  .media > img {
+    height: 200px;
+  }
+}
+
 .misc {
   display: flex;
   flex-wrap: wrap;

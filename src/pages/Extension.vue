@@ -35,6 +35,12 @@ onMounted(() => {
   margin-top: 96px;
 }
 
+@media (max-width: 768px) {
+  .page {
+    margin-top: 32px;
+  }
+}
+
 .card {
   margin: 0 auto;
 }
