@@ -49,6 +49,10 @@
         {
           "path": "/assets/media/word-search/3.png",
           "type": "image"
+        },
+        {
+          "path": "/assets/media/word-search/4.png",
+          "type": "image"
         }
       ]
     }
