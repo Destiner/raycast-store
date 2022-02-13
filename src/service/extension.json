@@ -23,7 +23,12 @@
           "description": "Search for rhymes given a word"
         }
       ],
-      "preferences": [],
+      "preferences": [
+        {
+          "title": "Result limit",
+          "description": "Sets the maximum number of results shown"
+        }
+      ],
       "author": {
         "name": "rishabswift",
         "avatar": "/assets/users/rishabswift.jpeg",
