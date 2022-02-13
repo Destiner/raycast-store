@@ -340,6 +340,10 @@ function getRequestFeatureUrl(title: string, source: string, author: string) {
   height: 100%;
 }
 
+.media > img {
+  border-radius: 8px;
+}
+
 .misc {
   display: flex;
   flex-wrap: wrap;
