@@ -1,11 +1,11 @@
 <template>
   <div class="bar">
-    <a
+    <RouterLink
       class="brand"
-      href="/"
+      :to="{ name: 'home' }"
     >
       <IconBrandFull />
-    </a>
+    </RouterLink>
     <div class="items">
       <ul class="routes">
         <li

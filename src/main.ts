@@ -17,7 +17,7 @@ const routerHistory = createWebHistory();
 const router = createRouter({
   history: routerHistory,
   routes: [
-    { path: '', redirect: '/store' },
+    { path: '', name: 'home', redirect: '/store' },
     { path: '/store', name: 'store', component: Store },
     { path: '/developers', name: 'developers', component: Developers },
     { path: '/pricing', name: 'pricing', component: Pricing },
